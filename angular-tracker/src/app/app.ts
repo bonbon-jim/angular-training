@@ -1,4 +1,4 @@
-import { Component, Inject, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PrimeNG } from 'primeng/config';
 
@@ -9,10 +9,10 @@ import { PrimeNG } from 'primeng/config';
   styleUrl: './app.scss'
 })
 export class App {
-  primeng: PrimeNG = Inject(PrimeNG);
+  primeng: PrimeNG = inject(PrimeNG);
   protected readonly title = signal('angular-tracker');
 
   ngOnInit() {
-      this.primeng.ripple.set(true);
-    }
+    this.primeng.ripple.set(true);
+  }
 }
