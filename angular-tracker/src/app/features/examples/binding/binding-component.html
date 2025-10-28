@@ -1,1 +1,18 @@
-<p>binding-component works!</p>
+<div class="binding-example-container">
+  <section class="input-section">
+    <p-iftalabel>
+      <input pInputText id="in_label" [(ngModel)]="userName" autocomplete="off" />
+      <label for="in_label">Username</label>
+    </p-iftalabel>
+    <p>Username: {{ userName }}</p>
+  </section>
+
+  <section class="counter-section">
+    <h2>Counter: {{ counter() }}</h2>
+    <div class="button-container">
+      <p-button (click)="counter.set(counter() + 1)">Add</p-button>
+      <p-button (click)="counter.set(counter() - 1)">Subtract</p-button>
+      <p-button (click)="counter.set(0)">Reset</p-button>
+    </div>
+  </section>
+</div>
