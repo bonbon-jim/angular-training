@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-tracker": {
+    "documents": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-tracker:build:production"
+              "buildTarget": "documents:build:production"
             },
             "development": {
-              "buildTarget": "angular-tracker:build:development"
+              "buildTarget": "documents:build:development"
             }
           },
           "defaultConfiguration": "development"

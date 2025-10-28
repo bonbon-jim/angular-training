@@ -11,7 +11,7 @@ import { AppHeaderComponent } from './core/app-header/app-header-component';
 })
 export class App {
   primeng: PrimeNG = inject(PrimeNG);
-  protected readonly title = signal('angular-tracker');
+  protected readonly title = signal('angular-documents');
 
   ngOnInit() {
     this.primeng.ripple.set(true);
