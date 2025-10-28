@@ -27,7 +27,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/tailwindcss-primeui/v4/index.css"
             ]
           },
           "configurations": {
@@ -81,7 +82,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/tailwindcss-primeui/v4/index.css"
             ]
           }
         }

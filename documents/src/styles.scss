@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use "tailwindcss";
-@use "tailwindcss-primeui";
+
+/* bundle thru angular.json to avoid import issues */
+// @use "tailwindcss-primeui";
 
