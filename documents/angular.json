@@ -21,15 +21,20 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
+              "src/favicon.ico",
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets/images",
+                "output": "assets/images"
+              },
+              {
+                "glob": "data.json",
+                "input": "src/app/data",
+                "output": "assets/data"
               }
             ],
-            "styles": [
-              "src/styles.scss",
-              "./node_modules/tailwindcss-primeui/v4/index.css"
-            ]
+            "styles": ["src/styles.scss", "./node_modules/tailwindcss-primeui/v4/index.css"]
           },
           "configurations": {
             "production": {
@@ -81,10 +86,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss",
-              "./node_modules/tailwindcss-primeui/v4/index.css"
-            ]
+            "styles": ["src/styles.scss", "./node_modules/tailwindcss-primeui/v4/index.css"]
           }
         }
       }
