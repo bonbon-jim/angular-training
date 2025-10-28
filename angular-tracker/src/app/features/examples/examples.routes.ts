@@ -9,5 +9,6 @@ export const examplesRoutes: Routes = [
     loadComponent: () => import('./input-para/input-para-component').then(m => m.InputParaComponent)
   },
   { path: 'binding', loadComponent: () => import('./binding/binding-component').then(m => m.BindingComponent) },
+  { path: 'directive', loadComponent: () => import('./directive/directive-component').then(m => m.DirectiveComponent) },
   { path: '**', redirectTo: 'input-para' }
 ];
