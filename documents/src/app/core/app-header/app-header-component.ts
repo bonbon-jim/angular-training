@@ -9,8 +9,4 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './app-header-component.scss'
 })
 export class AppHeaderComponent {
-  toggleDarkMode() {
-    const element = document.querySelector('html');
-    element?.classList.toggle('my-app-dark');
-  }
 }

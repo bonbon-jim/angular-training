@@ -1,18 +1,19 @@
 <!-- 通常会有一个根容器 -->
 <div class="app-container">
-  
   <!-- 1. 导航/头部组件 -->
-  <app-header></app-header>
-  
-  <!-- 2. 侧边栏菜单 -->
-  <!-- <app-sidebar *ngIf="showSidebar"></app-sidebar> -->
-  
+
+  <div class="app-header">
+    <div class="fixed inset-x-0 top-0 z-10 border-b border-gray-950/5 dark:border-white/10">
+      <app-header></app-header>
+    </div>
+  </div>
+
   <!-- 3. 主要内容区域 - router-outlet 在这里 -->
   <main class="main-content">
-    <router-outlet></router-outlet>
+    <div class="fixed top-16">
+      <router-outlet></router-outlet>
+    </div>
   </main>
-  <!-- 4. 底部组件 -->
-  <!-- <app-footer></app-footer> -->
   
   <!-- 5. 全局弹窗/通知 -->
   <!-- <app-notification></app-notification> -->
