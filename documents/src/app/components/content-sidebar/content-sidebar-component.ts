@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
-  selector: 'app-content-sidebar-component',
+  selector: 'content-sidebar-component',
   imports: [],
   standalone: true,
   templateUrl: './content-sidebar-component.html',
   styleUrl: './content-sidebar-component.scss'
 })
 export class ContentSidebarComponent {
+  @Input() width: string = '60';
 
 }
