@@ -1,7 +1,7 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PrimeNG } from 'primeng/config';
-import { AppHeaderComponent } from './core/app-header/app-header-component';
+import { AppHeaderComponent } from './components/app-header/app-header-component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,6 @@ import { AppHeaderComponent } from './core/app-header/app-header-component';
 })
 export class App {
   primeng: PrimeNG = inject(PrimeNG);
-  protected readonly title = signal('angular-documents');
 
   ngOnInit() {
     this.primeng.ripple.set(true);

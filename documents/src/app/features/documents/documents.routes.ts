@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { InputParaComponent } from './input-para/input-para-component';
 import { BindingComponent } from './binding/binding-component';
 
-export const examplesRoutes: Routes = [
+export const documentsRoutes: Routes = [
   { path: '', redirectTo: 'input-para', pathMatch: 'full' },
   { 
     path: 'input-para', 

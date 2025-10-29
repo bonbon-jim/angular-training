@@ -7,13 +7,13 @@ import { MenuItem } from 'primeng/api';
 import { RippleModule } from 'primeng/ripple';
 
 @Component({
-  selector: 'app-example-component',
+  selector: 'app-documents-component',
   imports: [RouterOutlet, MenuModule, AvatarModule, BadgeModule, RippleModule],
   standalone: true,
-  templateUrl: './example-component.html',
-  styleUrl: './example-component.scss',
+  templateUrl: './documents-component.html',
+  styleUrl: './documents-component.scss',
 })
-export class ExampleComponent implements OnInit {
+export class DocumentsComponent implements OnInit {
   items: MenuItem[] | undefined;
 
   ngOnInit() {
