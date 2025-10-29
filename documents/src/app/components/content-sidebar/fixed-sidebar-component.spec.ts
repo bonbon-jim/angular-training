@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentSidebarComponent } from './content-sidebar-component';
+import { ContentSidebarComponent } from './fixed-sidebar-component';
 
 describe('ContentSidebarComponent', () => {
   let component: ContentSidebarComponent;

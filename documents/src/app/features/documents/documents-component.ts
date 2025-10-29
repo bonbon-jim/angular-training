@@ -5,11 +5,11 @@ import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
 import { MenuItem } from 'primeng/api';
 import { RippleModule } from 'primeng/ripple';
-import { ContentSidebarComponent } from '../../components/content-sidebar/content-sidebar-component';
+import { FixedSidebarComponent } from '../../components/content-sidebar/fixed-sidebar-component';
 
 @Component({
   selector: 'app-documents-component',
-  imports: [RouterOutlet, MenuModule, AvatarModule, BadgeModule, RippleModule, ContentSidebarComponent],
+  imports: [RouterOutlet, MenuModule, AvatarModule, BadgeModule, RippleModule, FixedSidebarComponent],
   standalone: true,
   templateUrl: './documents-component.html',
   styleUrl: './documents-component.scss',
