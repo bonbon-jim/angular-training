@@ -1,4 +1,4 @@
-<div class="documents-container">
+<div class="documents-container flex">
   <fixed-sidebar-component width="20rem" height="calc(100vh - 4rem)">
     @for (num of loops; track num) {
       <div>hello {{ num }}</div>
@@ -6,15 +6,8 @@
     
   </fixed-sidebar-component>
   <!-- 右侧工作区 -->
-  <main class="workspace absolute left-200 top-0">
-    <!-- 上方的header bar -->
-    <header class="header-bar left-60">
-      <h2>示例工作区</h2>
-       @for (num of loops; track num) {
-      <div>hello {{ num }}</div>
-    }
-    </header>
-
+  <main class="workspace">
+    <h1>Doc Header</h1>
     <!-- 下方的工作区内容 -->
     <section class="content-area">
       <router-outlet></router-outlet>
