@@ -16,6 +16,7 @@ import { FixedSidebarComponent } from '../../components/content-sidebar/fixed-si
 })
 export class DocumentsComponent implements OnInit {
   items: MenuItem[] | undefined;
+  loops: number[] = Array.from({ length: 9999 }, (_, i) => i + 1);
 
   ngOnInit() {
     this.items = [
