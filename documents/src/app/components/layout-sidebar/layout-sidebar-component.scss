@@ -1,0 +1,15 @@
+.fixed-sidebar-container {
+  position: sticky;
+  inset-inline-start: 0;
+  top: 6rem;
+  height: calc(100vh - 9rem);
+  -webkit-user-select: none;
+  user-select: none;
+  transition: transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99), opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  flex: 0 0 250px;
+  margin-inline-end: 4rem;
+  overflow: auto;
+}

@@ -1,10 +1,7 @@
 <div class="documents-container flex">
-  <fixed-sidebar-component width="20rem" height="calc(100vh - 4rem)">
-    @for (num of loops; track num) {
-      <div>hello {{ num }}</div>
-    }
-    
-  </fixed-sidebar-component>
+  <cp-layout-sidebar width="20rem" height="calc(100vh - 4rem)">
+    <cp-side-menu></cp-side-menu>
+  </cp-layout-sidebar>
   <!-- 右侧工作区 -->
   <main class="workspace">
     <h1>Doc Header</h1>

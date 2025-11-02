@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'fixed-sidebar-component',
+  selector: 'cp-layout-sidebar',
   imports: [CommonModule],
   standalone: true,
-  templateUrl: './fixed-sidebar-component.html',
-  styleUrl: './fixed-sidebar-component.scss'
+  templateUrl: './layout-sidebar-component.html',
+  styleUrl: './layout-sidebar-component.scss'
 })
-export class FixedSidebarComponent {
+export class LayoutSidebarComponent {
   @Input() width: string = '100%';
   @Input() height: string = '100%';
 }

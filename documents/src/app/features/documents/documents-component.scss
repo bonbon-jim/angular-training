@@ -1,2 +1,7 @@
-.documents-container {
+.documents-container  {
+  .workspace {
+    height: calc(100vh - 4rem);
+    width: calc(100vw - 20rem);
+    overflow-y: auto;
+  } 
 }
