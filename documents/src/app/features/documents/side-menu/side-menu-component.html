@@ -1,1 +1,9 @@
-<p>side-menu-component works!</p>
+<nav>
+  <ol class="layout-menu">
+    @for (item of menuItems; track $index) {
+      <li>
+        <cp-menu-item [menuItem]="item"></cp-menu-item>
+      </li>
+    }
+  </ol>
+</nav>

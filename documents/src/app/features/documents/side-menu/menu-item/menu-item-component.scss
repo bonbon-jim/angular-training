@@ -1,0 +1,17 @@
+.menu-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  margin-inline-end: 0.5rem;
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  position: relative;
+  background-color: transparent;
+}
+
+.item-label a {
+  text-decoration: none;
+}

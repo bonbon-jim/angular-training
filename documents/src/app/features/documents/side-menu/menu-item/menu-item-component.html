@@ -1,8 +1,20 @@
 <div class="menu-item-container">
-  <div class="flex flex-row">
-    
-    <div>
-      <ng-content select="app-tab"></ng-content>    
+  <div class="flex flex-row m-1" dir='ltr'>
+    @if (menuItem.icon) {
+      <div class="menu-icon">
+        <i [ngClass]="[menuItem.icon]"></i>
+      </div>
+    }
+    <div class="item-label grow-1 ms-2">
+      @if (menuItem.route) {
+        <a [routerLink]="menuItem.route">{{ menuItem.label }}</a>
+      } @else {
+        <a>{{ menuItem.label }}</a>
+      }
+      
+    </div>
+    <div class="item-badge">
+      <ng-content select="badge-slot"></ng-content>    
     </div>
   </div>
 

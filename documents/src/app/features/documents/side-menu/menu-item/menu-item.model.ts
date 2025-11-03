@@ -1,4 +1,5 @@
 export interface SubMenuItem {
+  label: string;
   route: string;
 }
 
@@ -9,7 +10,7 @@ export interface SubMenuItemGroup {
 
 export interface MenuItem {
   icon?: string;
-  text: string;
+  label: string;
   route?: string;
   subGroups?: SubMenuItemGroup[];
 }
