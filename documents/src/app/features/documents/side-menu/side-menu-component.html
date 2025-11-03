@@ -1,7 +1,7 @@
 <nav>
   <ol class="layout-menu">
     @for (item of menuItems; track $index) {
-      <li>
+      <li class="menu-item">
         <cp-menu-item [menuItem]="item"></cp-menu-item>
       </li>
     }
