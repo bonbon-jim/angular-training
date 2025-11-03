@@ -1,0 +1,12 @@
+<div class="menu-item-container">
+  <div class="flex flex-row">
+    
+    <div>
+      <ng-content select="app-tab"></ng-content>    
+    </div>
+  </div>
+
+  @if (menuItem.subGroups) {
+    <ng-content></ng-content>
+  }
+</div>
