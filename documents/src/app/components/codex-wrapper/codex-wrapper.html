@@ -1,0 +1,33 @@
+<figure
+  class="flex flex-col gap-1 rounded-xl bg-gray-950/5 p-1 inset-ring inset-ring-gray-950/5 dark:bg-white/10 dark:inset-ring-white/10"
+>
+  <div
+    class="not-prose overflow-auto rounded-lg bg-white outline outline-white/5 dark:bg-gray-950/50 p-8"
+  >
+    <div class="grid place-items-center">
+      <ng-content select="[slot=demo]"></ng-content>
+    </div>
+  </div>
+  <div>
+    <div
+      class="rounded-xl bg-gray-950 in-data-stack:mt-0 in-data-stack:rounded-none in-[figure]:-mx-1 in-[figure]:-mb-1 in-data-stack:[:first-child&gt;&amp;]:rounded-t-xl in-data-stack:[:first-child&gt;&amp;]:*:rounded-t-xl in-data-stack:[:last-child&gt;&amp;]:rounded-b-xl in-data-stack:[:last-child&gt;&amp;]:*:rounded-b-xl"
+    >
+      <div
+        class="rounded-xl p-1 text-sm scheme-dark in-data-stack:rounded-none dark:bg-white/5 dark:inset-ring dark:inset-ring-white/10 in-data-stack:dark:inset-ring-0 not-prose"
+      >
+        <div class="relative"></div>
+        <div
+          class="*:flex *:*:shrink-0 *:*:grow *:overflow-auto *:rounded-lg *:bg-white/10! *:p-5 dark:*:bg-white/5! **:[.line]:isolate **:[.line]:block **:[.line]:not-last:min-h-[1lh] *:inset-ring *:inset-ring-white/10 dark:*:inset-ring-white/5 *:*:max-w-none"
+        >
+          <pre
+            class="shiki tailwindcss-theme"
+            style="background-color: transparent; color: var(--color-slate-50)"
+            tabindex="0"
+          ><code>
+            <ng-content select="[slot=code]"></ng-content>
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</figure>

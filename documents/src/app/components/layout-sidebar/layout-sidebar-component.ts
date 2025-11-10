@@ -4,7 +4,6 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'cp-layout-sidebar',
   imports: [CommonModule],
-  standalone: true,
   templateUrl: './layout-sidebar-component.html',
   styleUrl: './layout-sidebar-component.scss'
 })

@@ -1,17 +1,28 @@
-<p>singal-binding-component works!</p>
-<section class="input-section">
-    <h2>Username: {{ userName }}</h2>
-    <p-iftalabel>
-      <input pInputText id="in_label" [(ngModel)]="userName" autocomplete="off" />
-      <label for="in_label">Username</label>
-    </p-iftalabel>
-  </section>
+<div class="doc-binding text-sm font-medium text-slate-700 dark:text-slate-200">
+  <p>Binding user interactiable components, usually to bind thru ngModel (2-ways)</p>
+  <p class="my-5">For example, to apply [(ngModel)] of input element</p>
+  <app-codex-wrapper>
+    <div slot="demo">
+      <p-iftalabel>
+        <input pInputText id="in_label" [(ngModel)]="userName" autocomplete="off" />
+        <label for="in_label">Username</label>
 
-  <section class="signal-section">
+        <p class="text-xs text-slate-700 dark:text-slate-200 mt-3">Data Source: {{ userName }}</p>
+      </p-iftalabel>
+    </div>
+    <div slot="code">
+      <span class="line">
+        {{ inputDemoCode }}
+      </span>
+    </div>
+    
+  </app-codex-wrapper>
+  <!-- <section class="signal-section">
     <h2>Counter Signal: {{ counter() }}</h2>
     <div class="button-container">
       <p-button (click)="counter.set(counter() + 1)">Add</p-button>
       <p-button (click)="counter.set(counter() - 1)">Subtract</p-button>
       <p-button (click)="counter.set(0)">Reset</p-button>
     </div>
-  </section>
+  </section> -->
+</div>
