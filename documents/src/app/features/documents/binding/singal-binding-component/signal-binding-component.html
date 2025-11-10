@@ -1,0 +1,17 @@
+<p>singal-binding-component works!</p>
+<section class="input-section">
+    <h2>Username: {{ userName }}</h2>
+    <p-iftalabel>
+      <input pInputText id="in_label" [(ngModel)]="userName" autocomplete="off" />
+      <label for="in_label">Username</label>
+    </p-iftalabel>
+  </section>
+
+  <section class="signal-section">
+    <h2>Counter Signal: {{ counter() }}</h2>
+    <div class="button-container">
+      <p-button (click)="counter.set(counter() + 1)">Add</p-button>
+      <p-button (click)="counter.set(counter() - 1)">Subtract</p-button>
+      <p-button (click)="counter.set(0)">Reset</p-button>
+    </div>
+  </section>

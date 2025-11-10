@@ -1,17 +1,14 @@
 import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { InputTextModule } from 'primeng/inputtext';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { ButtonModule } from 'primeng/button';
+import { WsTitle } from "../ws-title/ws-title";
+import { SignalBindingComponent } from './singal-binding-component/signal-binding-component';
 
 @Component({
   selector: 'app-binding-component',
-  imports: [FormsModule, InputTextModule, IftaLabelModule, ButtonModule],
+  imports: [WsTitle, SignalBindingComponent],
   standalone: true,
   templateUrl: './binding-component.html',
   styleUrl: './binding-component.scss'
 })
 export class BindingComponent {
-  userName: string = '';
-  counter = signal(0);
+ 
 }
